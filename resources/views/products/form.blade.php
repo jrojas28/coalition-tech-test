@@ -41,8 +41,8 @@
       <div class="panel-heading">
         Items Previously Submitted
       </div>
-      <div class="panel-body" id="product-holder">
-        <div class="col-xs-12">
+      <div class="panel-body">
+        <div class="col-xs-12" id="product-holder">
             <div class="col-xs-3">
               <b>Product</b>
             </div>
@@ -71,7 +71,7 @@
                   ${{ $psp->stock }}
                 </div>
                 <div class="col-xs-3">
-                  ${{ $psp->created_at }}
+                  {{ $psp->created_at }}
                 </div>
                 <div class="col-xs-2">
                   ${{ $psp->stock * $psp->price}}
